@@ -1,4 +1,5 @@
 import json
+from pathlib import Path
 
 def validate(story):
     errors = []
@@ -169,4 +170,5 @@ def run(story):
         print(output)
 
 if __name__ == "__main__":
-    run(load_story("cellar_story.json"))
+    story_path = Path(__file__).parent / "Projects" / "cellar_story.json"
+    run(load_story(story_path))

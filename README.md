@@ -28,7 +28,8 @@ QUICK START
 	To play a different story, change the path in the last line of engine.py:
 
 		if __name__ == "__main__":
-			run(load_story("your_story.json"))
+			story_path = Path(__file__).parent / "Projects"  / "your_story.json"
+			run(load_story(story_path))
 
 
 PLAYING
