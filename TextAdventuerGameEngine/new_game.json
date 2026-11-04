@@ -1,0 +1,42 @@
+{
+    "start":"lounge",
+    "rooms":{
+        "lounge":{
+            "description":"The sofa is moldy. You can smell the age of the floor.",
+            "exits":{
+                "north":"kitchen"
+            }
+        },
+        "kitchen":{
+            "description":"The kitchen smells like fish.",
+            "exits":{
+                "north":"backyard",
+                "east":"dining_room",
+                "west":{"to":"basement", "requires":"basement_key"},
+                "south":"lounge"
+            },
+            "items":["basement_key"]
+        },
+        "basement":{
+            "description":"A dingey dark basement. Smells like death.",
+            "exits":{
+                "east":"kitchen"
+            }
+        },
+        "dining_room":{
+            "description":"How can someone eat in here?",
+            "exits":{
+                "west":"kitchen"
+            }
+        },
+        "backyard":{
+            "description":"Atleast the yard looks good",
+            "exits":{
+                "south":"kitchen"
+            }
+        }
+    },
+    "items":{
+        "basement_key":{"name":"basement key", "takeable":true}
+    }
+}
