@@ -169,4 +169,4 @@ def run(story):
         print(output)
 
 if __name__ == "__main__":
-    run(load_story("new_game.json"))
+    run(load_story("cellar_story.json"))
