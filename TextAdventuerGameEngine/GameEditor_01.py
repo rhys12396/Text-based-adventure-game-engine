@@ -1,3 +1,8 @@
+# READ ME
+# This is the only file you need to download in-order for the editor to work. Run this with python
+# and ensure all libraries are downloaded. 
+# Library install command: "python -m pip install pyinstaller" (Windows) "python3 -m pip install pyinstaller" (Mac)
+
 import subprocess
 import sys
 import tempfile
