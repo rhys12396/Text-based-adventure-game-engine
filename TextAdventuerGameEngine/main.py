@@ -1,3 +1,7 @@
+# README
+# This file is to run a hand coded JSON file game. It contains the nessessary components to make the 
+# game editor work. The game editor file includes all this code so this is not needed when downloading.
+
 import json
 from pathlib import Path
 
